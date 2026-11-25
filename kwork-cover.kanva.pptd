@@ -1,0 +1,29 @@
+version: v2
+title: Обложка Kwork — сайт RAYA
+size: [1100, 740]
+customFonts:
+  - family: Onest
+    src: "https://fonts.googleapis.com/css2?family=Onest"
+  - family: Tenor Sans
+    src: "https://fonts.googleapis.com/css2?family=Tenor+Sans"
+theme:
+  colors:
+    bg: "#f2ede4"
+    ink: "#23201a"
+    soft: "#6e675c"
+    accent: "#93400a"
+    orange: "#c96f21"
+  textStyles:
+    kicker:
+      fontSize: 15
+      fontFamily: Onest
+      color: "$accent"
+      bold: true
+      letterSpacing: 3
+    body:
+      fontSize: 17
+      fontFamily: Onest
+      color: "$soft"
+      lineHeight: 1.55
+pages:
+  - pages/1_cover.page

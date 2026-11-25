@@ -1,0 +1,142 @@
+pageType: cover
+background:
+  type: solid
+  color: "$bg"
+elements:
+  # ---- декор: тонкое «солнце» за макетом браузера ----
+  - elementId: sun-ring
+    elementType: shape
+    bounds: [760, -140, 520, 520]
+    shapeName: donut
+    adjustments: [3000]
+    fill: {type: solid, color: "#c96f2133"}
+  - elementId: sun-dot
+    elementType: shape
+    bounds: [988, 84, 14, 14]
+    shapeName: ellipse
+    fill: {type: solid, color: "$orange"}
+
+  # ---- левая колонка: текст ----
+  - elementId: kicker
+    elementType: text
+    bounds: [64, 156, 460, 24]
+    content:
+      style: "$kicker"
+      wrap: false
+      text: "/ КЕЙС · САЙТ ДЛЯ БРЕНДА ОЧКОВ"
+
+  - elementId: headline-1
+    elementType: text
+    bounds: [60, 196, 470, 72]
+    content:
+      fontSize: 52
+      fontFamily: Tenor Sans
+      color: "$ink"
+      wrap: false
+      align: [left, middle]
+      text: "Сайт под ключ,"
+  - elementId: headline-2
+    elementType: text
+    bounds: [60, 264, 470, 72]
+    content:
+      fontSize: 52
+      fontFamily: Tenor Sans
+      color: "$ink"
+      wrap: false
+      align: [left, middle]
+      text: |
+        <p>который <span style="color:$orange;">продаёт</span></p>
+
+  - elementId: sub
+    elementType: text
+    bounds: [64, 392, 420, 84]
+    content:
+      style: "$body"
+      align: [left, top]
+      text: |
+        <p>Дизайн, тексты, сборка и публикация. Живой пример справа — лендинг бренда солнцезащитных очков RAYA.</p>
+
+  # ---- плашка с адресом ----
+  - elementId: url-pill
+    elementType: shape
+    bounds: [64, 524, 330, 46]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill: {type: solid, color: "#23201a"}
+  - elementId: url-dot
+    elementType: shape
+    bounds: [84, 541, 12, 12]
+    shapeName: ellipse
+    fill: {type: solid, color: "#7ac142"}
+  - elementId: url-text
+    elementType: text
+    bounds: [106, 524, 276, 46]
+    content:
+      fontSize: 15
+      fontFamily: Onest
+      color: "#f2ede4"
+      wrap: false
+      align: [left, middle]
+      text: "vvetta-web.github.io/raya"
+
+  # ---- нижняя подпись ----
+  - elementId: footer
+    elementType: text
+    bounds: [64, 660, 460, 22]
+    content:
+      fontSize: 13
+      fontFamily: Onest
+      color: "$soft"
+      wrap: false
+      text: "vvetta-web · вёрстка · адаптив · публикация на GitHub Pages"
+
+  # ---- макет браузера со снимком сайта ----
+  - elementId: browser-shadow
+    elementType: shape
+    bounds: [554, 222, 540, 338]
+    shapeName: roundRect
+    adjustments: [4000]
+    fill: {type: solid, color: "#23201a14"}
+  - elementId: browser-bar
+    elementType: shape
+    bounds: [540, 168, 540, 44]
+    shapeName: roundRect
+    adjustments: [12000]
+    fill: {type: solid, color: "#ffffff"}
+  - elementId: browser-dot1
+    elementType: shape
+    bounds: [564, 184, 11, 11]
+    shapeName: ellipse
+    fill: {type: solid, color: "#e5b8a0"}
+  - elementId: browser-dot2
+    elementType: shape
+    bounds: [584, 184, 11, 11]
+    shapeName: ellipse
+    fill: {type: solid, color: "#eccf9b"}
+  - elementId: browser-dot3
+    elementType: shape
+    bounds: [604, 184, 11, 11]
+    shapeName: ellipse
+    fill: {type: solid, color: "#c8d6b8"}
+  - elementId: browser-url
+    elementType: shape
+    bounds: [648, 178, 404, 24]
+    shapeName: roundRect
+    adjustments: [50000]
+    fill: {type: solid, color: "#f2ede4"}
+  - elementId: browser-url-text
+    elementType: text
+    bounds: [648, 178, 404, 24]
+    content:
+      fontSize: 12.5
+      fontFamily: Onest
+      color: "$soft"
+      wrap: false
+      align: [center, middle]
+      text: "vvetta-web.github.io/raya"
+  - elementId: site-shot
+    elementType: image
+    bounds: [540, 212, 540, 338]
+    src: "media/site-hero.jpg"
+    cropShape: {shapeName: roundRect, adjustments: [2500]}
+    fit: {mode: cover}
